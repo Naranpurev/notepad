@@ -1,0 +1,18 @@
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-out;
+}
+button {
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: -1rem;
+    font-size: 0.8rem;
+}
+.form-control,.form-control input {
+    border:none !important;
+    font-weight: 600;
+    outline: none;
+}

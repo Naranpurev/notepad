@@ -1,0 +1,7 @@
+<form class="position-relative my-5" (ngSubmit)="onSubmit()">
+    <div class="form-control d-flex flex-column">
+        <input [(ngModel)]="noteTitle" *ngIf="title" class="text-secondary" type="text" name="noteTitle" placeholder="Title">
+        <input [(ngModel)]="noteDescription" (click)="title = true" class="text-secondary mb-5" type="text" name="noteDescription" placeholder="Take a note...">
+    </div>
+    <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
+</form>

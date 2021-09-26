@@ -1,0 +1,16 @@
+.header {
+    background-color: #6d326d;
+    height: 100vw;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+img {
+    width: 50px;
+    height: auto;
+}
+.angular {
+    width: 40px !important;
+}

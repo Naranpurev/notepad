@@ -1,0 +1,49 @@
+.note {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.notepads {
+    max-width: 300px;
+    /* overflow-y:auto; */
+    /* height: 110px; */
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.4s ease-in;
+}
+
+.notepads:hover, .notepads:focus {
+    transform: scale(1.2);
+}
+.buttonPlus {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+button i {
+    color: #6d326d;
+}
+.modals {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-100000px);
+    width: 500px;
+    transition: all .5s ease-in;
+}
+.blur {
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.enableModal {
+    transform: translate(-50%,-50%);
+}
+.form-control,.form-control input {
+    border:none !important;
+    outline: none;
+}

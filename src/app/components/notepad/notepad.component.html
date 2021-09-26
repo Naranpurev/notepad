@@ -1,0 +1,25 @@
+<section class="note my-5 row  gap-2" >
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xl-6 notepads" *ngFor="let note of notepads" (click)="onSelect(note)" >
+        <div class=" pop bg-white rounded p-3 position-relative">
+            <h5 >{{note.title}}</h5>
+            <p >{{note.description}}</p>
+            <button type="submit" class="btn btn-white buttonPlus">
+                <i class="fa fa-pencil"></i>
+            </button>
+        </div>
+    </div> 
+</section>
+<div *ngIf="modal" class="blur"></div>
+<form #regForm="ngForm" (ngSubmit)="onSubmit(regForm)"  [class.enableModal]="modal" class="modals">
+    <div class="notepad form-control bg-white rounded p-3 d-flex flex-column">
+        <input type="text" class="text-secondary" [(ngModel)]="selectedNote.title" name="title" ngModel>
+        <hr>
+        <input type="text" class="text-secondary" [(ngModel)]="selectedNote.description" name="description" ngModel>
+        <div class="d-flex justify-content-between mt-4">
+            <button type="button" (click)="removeNote()"  class="btn btn-light">
+                <i class="fa fa-minus"></i>
+            </button>
+            <button type="submit" class="btn btn-light">Done</button>
+        </div>
+    </div>
+</form>
