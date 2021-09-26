@@ -14,3 +14,9 @@ img {
 .angular {
     width: 40px !important;
 }
+@media(max-width:968px) {
+    .header {
+        height: 100%;
+    }
+}
+
